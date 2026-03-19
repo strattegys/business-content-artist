@@ -8,7 +8,7 @@ interface Props {
 }
 
 export default function CTAButton({ href, children, variant = 'primary', className = '' }: Props) {
-  const base = 'inline-flex items-center justify-center gap-2 font-semibold rounded-lg transition-all duration-300 cursor-pointer no-underline'
+  const base = 'font-brand inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-all duration-300 cursor-pointer no-underline'
 
   const styles = variant === 'primary'
     ? {

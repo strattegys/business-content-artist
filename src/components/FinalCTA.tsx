@@ -16,7 +16,7 @@ export default function FinalCTA() {
 
       <RevealOnScroll>
         <h2
-          className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 max-w-3xl mx-auto leading-tight"
+          className="font-serif text-3xl md:text-4xl lg:text-5xl font-normal mb-6 max-w-3xl mx-auto leading-tight"
           style={{ color: 'var(--text-primary)' }}
         >
           Ready to Build a Content Funnel

@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /c/Users/USER1/Documents -type f \\\\\\(-name *.html -o -name *.tsx -o -name *.md \\\\\\) -not -path */node_modules/*)",
+      "Bash(find /c/Users/USER1/Documents -type f -name *.md ! -path */node_modules/* ! -path */.opencode/*)",
+      "Bash(find /c/Users/USER1/Documents/STUFF/CLAUDE/apps/example-app -not -path */node_modules/* -type f)",
+      "Bash(find /c/Users/USER1/Documents -type f \\\\\\(-name *.md -o -name *.txt \\\\\\) ! -path */node_modules/* ! -path */.opencode/* ! -path */site/*)",
+      "Bash(xargs grep:*)",
+      "Bash(grep -ri \"testimonial\\\\|case study\\\\|pricing\\\\|investment\\\\|$475\\\\|$1000\\\\|retainer\" /c/Users/USER1/Documents --include=*.md --include=*.txt --include=*.csv)",
+      "Bash(find /c/Users/USER1/Documents -type f -name *.csv ! -path */.claude/* ! -path */node_modules/*)",
+      "Bash(grep -r 'Business Content Artist' /c/Users/USER1/Documents --include=*.html --include=*.tsx --include=*.jsx)",
+      "Bash(find /c/Users/USER1/.claude -type f -name *.md)",
+      "Bash(npm create:*)",
+      "Bash(cp -r C:/Users/USER1/Documents/BCA-temp/bca-app/* C:/Users/USER1/Documents/BCA/)",
+      "Bash(cp -r C:/Users/USER1/Documents/BCA-temp/bca-app/.* C:/Users/USER1/Documents/BCA/)",
+      "Bash(rm -rf C:/Users/USER1/Documents/BCA-temp)",
+      "Bash(npm install:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(node -e \"console.log\\(require\\(''framer-motion/package.json''\\).version\\)\")",
+      "Bash(npm uninstall:*)",
+      "Bash(pkill -f \"vite\")",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(gh auth:*)",
+      "Bash(gh repo:*)",
+      "Bash(gh api:*)",
+      "Bash(gh run:*)"
+    ]
+  }
+}

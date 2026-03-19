@@ -30,14 +30,14 @@ export default function Hero() {
     >
       {/* Background orbs */}
       <div
-        className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full opacity-30"
+        className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full opacity-20"
         style={{
           background: 'radial-gradient(circle, rgba(232,146,47,0.15), transparent 70%)',
           filter: 'blur(80px)',
         }}
       />
       <div
-        className="absolute bottom-[-20%] left-[-10%] w-[500px] h-[500px] rounded-full opacity-25"
+        className="absolute bottom-[-20%] left-[-10%] w-[500px] h-[500px] rounded-full opacity-15"
         style={{
           background: 'radial-gradient(circle, rgba(59,191,178,0.12), transparent 70%)',
           filter: 'blur(80px)',
@@ -45,70 +45,63 @@ export default function Hero() {
       />
 
       <div className="section-container text-center max-w-4xl pt-28">
-        {/* Badge */}
-        <FadeUp delay={0.1} className="mb-8">
+        {/* Wordmark */}
+        <FadeUp delay={0.1} className="mb-6">
           <span
-            className="font-mono inline-flex items-center gap-2 text-xs tracking-[2px] uppercase px-5 py-2.5 rounded-full"
-            style={{
-              border: '1px solid var(--border-accent)',
-              background: 'var(--accent-glow)',
-              color: 'var(--accent)',
-            }}
+            className="font-brand inline-block text-sm font-bold tracking-[6px] uppercase"
+            style={{ color: 'var(--text-primary)' }}
           >
-            <span
-              className="pulse-dot inline-block w-2 h-2 rounded-full"
-              style={{ background: 'var(--accent)' }}
-            />
+            Strattegys
+          </span>
+        </FadeUp>
+
+        {/* Label */}
+        <FadeUp delay={0.15} className="mb-8">
+          <span
+            className="font-mono inline-block text-xs tracking-[3px] uppercase"
+            style={{ color: 'var(--accent)' }}
+          >
             Content Funnel Build — Limited Engagements
           </span>
         </FadeUp>
 
-        {/* Headline */}
-        <FadeUp delay={0.2}>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6">
+        {/* Headline — serif display */}
+        <FadeUp delay={0.25}>
+          <h1
+            className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[1.1] mb-6"
+            style={{ color: 'var(--text-primary)' }}
+          >
             Get a{' '}
-            <span style={{ color: 'var(--accent)' }}>Done-For-You Content Funnel</span>
-            <br />
-            That Runs Without You.
+            <span style={{ color: 'var(--accent)' }}>Done-For-You
+            <br />Content Funnel</span>{' '}
+            That
+            <br />Runs Without You
           </h1>
         </FadeUp>
 
         {/* Subheading */}
-        <FadeUp delay={0.35}>
+        <FadeUp delay={0.4}>
           <p
-            className="text-lg md:text-xl max-w-2xl mx-auto mb-4"
+            className="text-lg md:text-xl max-w-2xl mx-auto mb-10"
             style={{ color: 'var(--text-secondary)' }}
           >
             A complete content funnel — landing page, killer offer, supporting content — built, launched, and handed off to your team with 90 days of support.
           </p>
         </FadeUp>
 
-        {/* Supporting text */}
-        <FadeUp delay={0.45}>
-          <p
-            className="text-base max-w-xl mx-auto mb-8"
-            style={{ color: 'var(--text-muted)' }}
-          >
-            Landing page. Killer offer. Supporting content. Live execution. 90 days of hands-on support. One fixed price.
-          </p>
-        </FadeUp>
-
-        {/* Price placeholder */}
-        <FadeUp delay={0.55} className="mb-8">
-          <span className="font-mono text-3xl md:text-4xl font-bold" style={{ color: 'var(--accent)' }}>
-            $X,XXX
-          </span>
-          <span className="block text-sm mt-1" style={{ color: 'var(--text-muted)' }}>
-            Fixed Project Price
-          </span>
-        </FadeUp>
-
-        {/* CTAs */}
-        <FadeUp delay={0.7} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-          <CTAButton href="#book">Book Your Strategy Call</CTAButton>
+        {/* CTA row */}
+        <FadeUp delay={0.55} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+          <CTAButton href="#book">Get Started &rarr;</CTAButton>
           <CTAButton href="https://signal.strattegys.com" variant="secondary">
             See My Work
           </CTAButton>
+        </FadeUp>
+
+        {/* Trust line */}
+        <FadeUp delay={0.65}>
+          <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
+            Free consultation &bull; Fixed project price &bull; 90-day support included
+          </p>
         </FadeUp>
       </div>
     </section>

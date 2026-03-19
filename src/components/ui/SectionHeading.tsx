@@ -10,7 +10,7 @@ export default function SectionHeading({ label, title, subtitle }: Props) {
   return (
     <div className="text-center mb-16">
       <SectionLabel>{label}</SectionLabel>
-      <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
+      <h2 className="font-serif text-3xl md:text-4xl font-normal mb-4" style={{ color: 'var(--text-primary)' }}>
         {title}
       </h2>
       {subtitle && (
