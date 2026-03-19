@@ -27,11 +27,11 @@ export default function Problem() {
         />
       </RevealOnScroll>
 
-      <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
         {painPoints.map((point, i) => (
           <RevealOnScroll key={i} delay={i * 0.1}>
             <div
-              className="rounded-xl p-6 text-center"
+              className="rounded-xl p-8 text-center"
               style={{
                 background: 'var(--bg-card)',
                 border: '1px solid var(--border)',

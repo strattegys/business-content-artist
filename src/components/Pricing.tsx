@@ -15,7 +15,7 @@ export default function Pricing() {
   return (
     <section className="section-container">
       <RevealOnScroll>
-        <div className="max-w-lg mx-auto text-center">
+        <div className="max-w-xl mx-auto text-center">
           <SectionLabel>INVESTMENT</SectionLabel>
 
           <div
@@ -31,7 +31,7 @@ export default function Pricing() {
               style={{ background: 'linear-gradient(90deg, var(--accent), var(--accent-warm))' }}
             />
 
-            <div className="p-8 md:p-10">
+            <div className="p-10 md:p-12">
               <span
                 className="font-mono inline-block text-xs tracking-[3px] uppercase px-4 py-1.5 rounded-full mb-6"
                 style={{
@@ -51,7 +51,7 @@ export default function Pricing() {
                 </span>
               </div>
 
-              <ul className="text-left space-y-4 mb-10">
+              <ul className="text-left space-y-5 mb-10">
                 {inclusions.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm" style={{ color: 'var(--text-secondary)' }}>
                     <span style={{ color: 'var(--accent)' }} className="shrink-0 mt-0.5">&#10003;</span>

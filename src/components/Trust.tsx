@@ -15,11 +15,11 @@ export default function Trust() {
         <SectionHeading label="WHO'S BUILDING THIS" title="Meet the Business Content Artist" />
       </RevealOnScroll>
 
-      <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto items-start">
+      <div className="grid md:grid-cols-2 gap-14 max-w-4xl mx-auto items-start">
         {/* Credentials card */}
         <RevealOnScroll delay={0.1}>
           <div
-            className="rounded-xl p-6 space-y-5"
+            className="rounded-xl p-8 space-y-6"
             style={{
               background: 'var(--bg-card)',
               border: '1px solid var(--border)',
@@ -47,7 +47,7 @@ export default function Trust() {
 
         {/* About text */}
         <RevealOnScroll delay={0.2}>
-          <div className="space-y-5">
+          <div className="space-y-6">
             <p className="text-lg font-semibold" style={{ color: 'var(--text-primary)' }}>
               I'm Govind Davis — the Business Content Artist.
             </p>

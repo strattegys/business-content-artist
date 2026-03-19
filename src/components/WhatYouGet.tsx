@@ -46,7 +46,7 @@ export default function WhatYouGet() {
         />
       </RevealOnScroll>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
         {deliverables.map((d, i) => (
           <RevealOnScroll key={i} delay={i * 0.08}>
             <Card icon={d.icon} title={d.title}>

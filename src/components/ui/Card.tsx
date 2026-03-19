@@ -9,7 +9,7 @@ interface Props {
 export default function Card({ icon, title, children }: Props) {
   return (
     <div
-      className="relative rounded-xl p-6 transition-all duration-300 overflow-hidden"
+      className="relative rounded-xl p-7 transition-all duration-300 overflow-hidden"
       style={{
         background: 'var(--bg-card)',
         border: '1px solid var(--border)',
@@ -33,8 +33,8 @@ export default function Card({ icon, title, children }: Props) {
           background: 'linear-gradient(90deg, var(--accent), var(--accent-warm))',
         }}
       />
-      <div className="text-3xl mb-4">{icon}</div>
-      <h3 className="text-lg font-semibold mb-2" style={{ color: 'var(--text-primary)' }}>
+      <div className="text-3xl mb-5">{icon}</div>
+      <h3 className="text-base font-semibold mb-3" style={{ color: 'var(--text-primary)' }}>
         {title}
       </h3>
       <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>

@@ -54,7 +54,7 @@ export default function Process() {
 
         {steps.map((step, i) => (
           <RevealOnScroll key={i} delay={i * 0.1}>
-            <div className="flex gap-6 md:gap-8 mb-10 last:mb-0 relative">
+            <div className="flex gap-6 md:gap-8 mb-14 last:mb-0 relative">
               {/* Number circle */}
               <div
                 className="font-mono shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center text-sm md:text-base font-bold z-10"
@@ -75,7 +75,7 @@ export default function Process() {
                 >
                   {step.timing}
                 </span>
-                <h3 className="text-xl font-semibold mb-2" style={{ color: 'var(--text-primary)' }}>
+                <h3 className="text-xl font-semibold mb-3" style={{ color: 'var(--text-primary)' }}>
                   {step.title}
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>

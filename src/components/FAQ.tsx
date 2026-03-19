@@ -76,7 +76,7 @@ export default function FAQ() {
     <section className="section-container" style={{ background: 'var(--bg-secondary)' }}>
       <RevealOnScroll>
         <SectionHeading label="FREQUENTLY ASKED" title="Questions Before We Start" />
-        <div className="max-w-2xl mx-auto space-y-3">
+        <div className="max-w-2xl mx-auto space-y-4">
           {faqs.map((faq, i) => (
             <FAQItem key={i} q={faq.q} a={faq.a} />
           ))}
