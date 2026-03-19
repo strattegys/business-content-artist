@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0b1622;
+  --bg-secondary: #0f1d2e;
+  --bg-card: #132436;
+  --bg-card-hover: #183044;
+  --accent: #e8922f;
+  --accent-glow: rgba(232, 146, 47, 0.15);
+  --accent-warm: #3bbfb2;
+  --text-primary: #eef0f2;
+  --text-secondary: #8a9bb0;
+  --text-muted: #506478;
+  --border: #1e3248;
+  --border-accent: rgba(232, 146, 47, 0.35);
+  --gradient-hero: linear-gradient(135deg, #0b1622 0%, #0e1a2a 50%, #0b1825 100%);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.grid-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image:
+    linear-gradient(rgba(59,191,178,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,191,178,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.font-mono {
+  font-family: 'Space Mono', monospace;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.5); }
+}
+
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding: 4rem 1.25rem;
+  }
+}
